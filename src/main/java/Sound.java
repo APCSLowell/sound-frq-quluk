@@ -38,7 +38,7 @@ public class Sound
   public void trimSilenceFromBeginning()
   {
     int i = 0;
-    while( i<length &&samples[i]==0)
+    while( i<samples.length &&samples[i]==0)
       i++;
     int [] newSamp = new int [samples.length-i];
     int c =0;
